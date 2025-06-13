@@ -1,2 +1,4 @@
 
 hello push is working in main server
+hi
+hello
