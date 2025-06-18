@@ -11,5 +11,10 @@ pipeline {
                 sh 'hostname -i'
             }
         }
+        stage('memory usage'){
+            steps{
+                sh "free -h"
+            }
+        }
     }
 }
