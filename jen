@@ -1,0 +1,15 @@
+pipeline {
+    agent any
+    stages{
+        stage('print hostname'){
+            steps {
+                sh 'hostname'
+            }
+        }
+        stage('IP Address'){
+            steps{
+                sh 'hostname -i'
+            }
+        }
+    }
+}
