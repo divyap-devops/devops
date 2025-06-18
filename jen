@@ -16,5 +16,15 @@ pipeline {
                 sh "free -h"
             }
         }
+        stage('disk usage'){
+            steps{
+                sh "df -h"
+            }
+        }
+        stage('cpu details'){
+            steps{
+                sh 'lscpu'
+            }
+        }
     }
 }
