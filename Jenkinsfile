@@ -9,7 +9,7 @@ pipeline{
     stages{
         stage('Git-checkout'){
             steps{
-                git branch: 'master' , url: 'https://github.com/divyap-devops/devops.git'
+                git branch: 'main' , url: 'https://github.com/divyap-devops/devops.git'
             }
         }
         stage('Code Compile'){
